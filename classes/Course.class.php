@@ -3,8 +3,8 @@
 class Course {
     
    public function __construct() {
-    $this->db = new mysqli('localhost', 'root', '', 'php-rest-api');
-      
+    //$this->db = new mysqli('localhost', 'root', '', 'php-rest-api');
+    $this->db  = new mysqli('studentmysql.miun.se', 'momo1600', 'mg7xuf28', 'momo1600');
     if($this->db->connect_errno > 0) {
         die('SQL query error [' . $this->db->connect_error . ']');
       }

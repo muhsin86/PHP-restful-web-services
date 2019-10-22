@@ -10,9 +10,10 @@ ini_set("display_errors", 1);
 		});
 
 // Create local connection 
-$conn = new mysqli('localhost', 'root', '', 'php-rest-api'); 
+//$conn = new mysqli('localhost', 'root', '', 'php-rest-api'); 
 
 // Create public connection
+$conn = new mysqli('studentmysql.miun.se', 'momo1600', 'mg7xuf28', 'momo1600');
 
 
 // Check connection
